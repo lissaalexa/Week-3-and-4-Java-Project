@@ -71,7 +71,7 @@ public class Assignment {
 		
 		System.out.println(willBuyDrink(true, 30.00));
 		
-		Print("test");
+		System.out.println(countVowels("aesthetic"));
 	}
 	
 	//Question 7
@@ -131,8 +131,16 @@ public class Assignment {
 		}
 	}
 	// Question 13
-	public static void Print(String text) {
-		
-		System.out.print(text);
+	//CountVowel is the method I chose that takes a string as an input and returns the number of vowels 
+	//in the string.
+	public static int countVowels(String word) {
+		int count =  0;
+		for (int i = 0; i < word.length(); i++) {
+			char c = word.charAt(i);
+			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+				count++;
+			}
+		}
+		return count;
 	}
 }
