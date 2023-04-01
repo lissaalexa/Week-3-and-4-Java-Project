@@ -132,7 +132,9 @@ public class Assignment {
 	}
 	// Question 13
 	//CountVowel is the method I chose that takes a string as an input and returns the number of vowels 
-	//in the string.
+	//in the string. CountVowels is the method.
+	//The variable called 'count' begins at 0 and loops through each character in the string. For each
+	//character in the string, it checks if it is a vowel and if it does, it increments by 1.
 	public static int countVowels(String word) {
 		int count =  0;
 		for (int i = 0; i < word.length(); i++) {
@@ -142,5 +144,6 @@ public class Assignment {
 			}
 		}
 		return count;
+	//once finished going through all of the characters in the string, it returns the final count of the word.
 	}
 }
