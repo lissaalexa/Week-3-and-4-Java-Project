@@ -151,13 +151,13 @@ public class Assignment {
 		double sum2Avg = sum2 / arr2.length;
 		return sum1Avg > sum2Avg;
 	}
-	// Question 11 another example
+	// Question 11 another example (simplified)
 	public static boolean isAverageGreater(double[] arr1, double[] arr2) {
 		return calcAvg(arr1) > calcAvg(arr2);
 	}
 	// Question 12
 	//takes boolean isHotOutside and a double moneyInPocket and returns true if it is hot outside AND if there is moneyInPocket greater than 10.50
-	//if statement to indicate this, anything else will return false
+	//using if statement to indicate this, and anything else will return false
 	public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
 		if (isHotOutside && moneyInPocket > 10.50) {
 			return true;
